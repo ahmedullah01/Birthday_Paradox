@@ -64,8 +64,3 @@ Generates birthdays in the range **1–365**.
 4. If at least two members share the same birthday → **Output = true**.
    Otherwise → **Output = false**.
 
----
-
-👉 ye text tum seedha apni **README.md** file ya assignment me paste kar sakte ho.
-
-chaho to main iska ek **short summary paragraph** bhi bana du jo presentation slides me use ho sake?
