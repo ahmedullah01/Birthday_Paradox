@@ -18,7 +18,7 @@ dates[i] = r.generator();
     }
     }
     public boolean compare(){
-        boolean checker = false;
+            boolean checker = false;
 for(int i = 0 ; i < dates.length; i++){
     for(int j = i+1 ; j<dates.length ; j++){
         if(dates[i] == dates[j]){
