@@ -1,13 +1,13 @@
 public class Probability {
-int member;
+double member;
 Random_num_generator r;
-    int[] dates = new int[10];
+    double[] dates = new double[10];
     Probability(){
         r = new Random_num_generator();
     }
-public void setMember(int member){
+public void setMember(double member){
     this.member = member;
-    dates = new int[member];
+    dates = new double[(int) member];
 }
 
 public void birthdaydate_assign(){
@@ -31,5 +31,21 @@ for(int i = 0 ; i < dates.length; i++){
     }
 }
 return checker;
+    }
+
+
+    public void probability_percentage(double member){
+        double days = 365.0;
+        double PnoMatch = 1.0;
+        for(int  i = 0 ; i < member; i++){
+            PnoMatch*=(days - i)/days;
+        }
+        PnoMatch *= 100;
+        double PMatch =(100 - PnoMatch);
+
+
+        System.out.printf("Probability of finding atleast one match is : %2.2f\n", PMatch , "%");
+        System.out.printf("Probability of finding  no match is : %2.2f\n " , PnoMatch , "%");
+        System.out.println("number of members : " + member);
     }
 }
